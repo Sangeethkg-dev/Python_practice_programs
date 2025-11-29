@@ -1,0 +1,15 @@
+#calculator
+
+def summ(a,b):
+    return a+b
+def substract(a,b):
+    return a-b
+def division(a,b):
+    return a/b
+def multiplication(a,b):
+    return a*b
+ch=int(input("1=add\n2=sub\n3=division\n4=multiplication\n"))
+a=int(input("numbers"))
+b=int(input("numbers"))
+fn=[summ(a,b),substract(a,b),division(a,b),multiplication(a,b)]
+print(fn[ch-1])

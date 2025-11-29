@@ -1,0 +1,45 @@
+#finding solution of quadratic equations with a,b,c provided
+
+"""
+import cmath
+a=int(input("a="))
+b=int(input("b="))
+c=int(input("c="))
+discriminant=cmath.sqrt(b**2-4*a*c)
+solution1= ((-b)+discriminant)/(2*a)
+solution2= ((-b)-discriminant)/(2*a)
+print(solution1," ",solution2)
+
+"""
+#finding the solution of quadratic equations when the input is the equation in the original form itself
+
+import cmath
+y=input("enter quadratic in the form ax^2+bx+c: ")
+if len(y)==8:
+    a=1
+    if y[4]=="-":
+        b=(-int(y[4]))
+    else:
+        b=int(y[4])
+    if y[7]=="-":
+        c=(-int(y[7]))
+    else:
+        c=int(y[7])
+    discriminant=cmath.sqrt(b**2-4*a*c)
+    solution1= ((-b)+discriminant)/(2*a)
+    solution2= ((-b)-discriminant)/(2*a)
+    print(solution1," ",solution2)
+if len(y)==10:
+    a=(-int(y[1]))
+    if y[4]=="-":
+        b=(-int(y[6]))
+    else:
+        b=int(y[6])
+    if y[7]=="-":
+        c=(-int(y[9]))
+    else:
+        c=int(y[9])
+    discriminant=cmath.sqrt(b**2-4*a*c)
+    solution1= ((-b)+discriminant)/(2*a)
+    solution2= ((-b)-discriminant)/(2*a)
+    print(solution1," ",solution2)

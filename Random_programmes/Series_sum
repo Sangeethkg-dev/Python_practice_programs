@@ -1,0 +1,26 @@
+#expanded series sum upto n terms
+
+#1+ (X^2)/2 + (X^4)/4 + ....................
+"""
+import math
+n=int(input("How many terms of the series "))
+x=float(input("value of x "))
+Sum=1
+c=0
+while c<n-1:
+    c+=1
+    Sum+=(x**(2*c))/(2*c)
+print(Sum)
+"""
+#1 - (X^2)/2 + (X^4)/4 -  ....................
+"""
+import math
+n=int(input("How many terms of the series "))
+x=float(input("value of x "))
+Sum=1
+c=0
+while c<n-1:
+    c+=1
+    Sum+=((-1)**c)*(x**(2*c))/(2*c)
+print(Sum)
+"""

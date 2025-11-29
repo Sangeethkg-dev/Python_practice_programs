@@ -1,0 +1,8 @@
+#to show minimum and maximum of a tuple
+
+l=()
+n=int(input("how many values "))
+for i in range(0,n):
+    x=int(input("Enter value "))
+    l=l+(x,)
+print("min",min(l),"max",max(l))

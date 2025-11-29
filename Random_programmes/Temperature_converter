@@ -1,0 +1,8 @@
+#Temperature Converter
+
+T=float(input("Enter Temperature "))
+unit=(input("Enter the unit of temperature c/f "))
+if unit=="c":
+    print(T,"celsius degree=", T*(9/5)+32)
+if unit=="f":
+    print(T,"degree farenheit=", (T-32)*(5/9))

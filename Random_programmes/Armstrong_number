@@ -1,0 +1,13 @@
+#Amstrong number
+
+n=int(input("Enter the number "))
+original=n
+l=len(str(n))
+am=0
+for i in range (0,l):
+    am+=((n%10)**l)
+    n=n//10
+if am==original:
+    print(original," is an amstrong number")
+else:
+    print(original, " is not an amstrong number")

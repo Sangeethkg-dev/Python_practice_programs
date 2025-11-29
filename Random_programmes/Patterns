@@ -1,0 +1,17 @@
+#Inverse Star pyramid
+"""
+n=int(input("enter the number of lines needed "))
+for i in range(n-1,0,-1):
+    print((n-i)*" ",((2*i)+1)*"*")
+print((n)*" ","*")
+"""
+
+#Star pyramid
+"""
+n=int(input("how many lines?"))
+for i in range(0,n):
+    if i==0:
+        print(" "*(n-i),"*")
+    else:
+        print(" "*(n-i),"*"+" "*((2*i)-1)+"*")
+"""

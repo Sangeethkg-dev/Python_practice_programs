@@ -1,0 +1,8 @@
+#rotate list k times in the clockwise direction
+
+k=int(input("enter shift  "))
+l=eval(input('Enter list   '))
+for i in range(k):
+    l.insert(0,l.pop())
+print(l)
+l=l[-k:]+l[k:]

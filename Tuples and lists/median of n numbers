@@ -1,0 +1,9 @@
+#median of n numbers
+l=eval(input("Enter a list of numbers  "))
+n=len(l)
+l.sort()
+if n%2==1:
+    median=l[(n-1)//2]
+elif n%2==0:
+    median=(l[(n-3//2)]+l[(n-1)//2])/2
+print("Median is :"median)

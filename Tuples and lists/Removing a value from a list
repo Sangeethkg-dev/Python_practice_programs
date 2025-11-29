@@ -1,0 +1,10 @@
+#removing a value
+
+k=int(input("number to remove  "))
+l=eval(input('Enter list   '))
+m=[]
+for i in l:
+    if i!=k:
+        m.append(i)
+print(m)
+

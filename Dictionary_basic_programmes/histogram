@@ -1,0 +1,16 @@
+#histogram
+d={}
+str=input("Enter string")
+for i in str:
+    if i not in d:
+        d[i]=1
+    else:
+        d[i]+=1
+
+#or
+"""
+histogram={}
+str=input("Enter a string")
+for letter in str:
+    histogram[letter]=histogram.get(letter,0)+1
+"""

@@ -1,0 +1,14 @@
+#multiplication,substraction,sum of matrices
+
+import numpy as np
+mat1=np.array([[1,2],[4,5]])
+mat2=np.array([[9,2],[7,5]])
+ch=int(input("1=add, 2=subtract, 3=multiply, 4=transpose"))
+if ch==1:
+    print(np.add(mat1,mat2))
+if ch==3:
+    print(np.matmul(mat1,mat2))
+if ch==2:
+    print(np.subtract(mat1,mat2))
+if ch==4
+    print(mat1.T)

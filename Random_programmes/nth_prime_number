@@ -1,0 +1,16 @@
+#nth prime number
+
+def is_prime(num):
+    for i in range(2, int((num/2)+1)):
+        if num%i==0:
+            return False
+    return True
+count=0
+num=2
+n=int(input("enter the value of n  "))
+while count<n:
+    if is_prime(num)==True:
+        count+=1
+        if count==n:
+            print("The",n,"th prime number is",num)
+    num+=1

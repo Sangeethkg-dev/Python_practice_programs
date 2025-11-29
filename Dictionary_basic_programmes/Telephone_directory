@@ -1,0 +1,26 @@
+#Telephone directory
+def add(d):
+    a=input("key\n")
+    b=int(input("number\n"))
+    d[a]=b
+    print(d)
+def update(d):
+    a=input("key of the number to be updated\n")
+    b=int(input("updated number\n"))
+    print(d)
+def delete(d):
+    a=input("key\n")
+    d.remove(a)
+    print(d)
+def search(d):
+    a=input("key\n")
+    print(d["key"])    
+def display(d):
+    print(d)
+d=eval(input("Enter dictionary\n"))
+ch=input("1=add\n2=update\n3=delete\n4=search\n5=display\nexit=exit")
+
+fn=[add,update,delete,search,display]
+while ch!='exit':
+    print(fn[int(ch)-1](d))
+    ch=input("1=add\n2=update\n3=delete\n4=search\n5=display\n6exit=exit")

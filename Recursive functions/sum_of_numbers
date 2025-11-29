@@ -1,0 +1,10 @@
+#sum of n natural number
+
+def ssumm(n):
+    if n==1:
+        return 1
+    else:
+        summ=n+ssumm(n-1)
+        return summ
+n=int(input("number?  "))
+print(ssumm(n))
